@@ -1,0 +1,38 @@
+$theme-colors: (
+    "primary": #007CC7,
+    "secondary": #12232E,
+    "lightest-blue": #4DA8DA,
+    "shadow": #203647,
+    "shadow-light": #EEFBFB
+);
+
+
+.btn {
+
+    padding: $small-spacing $large-spacing;
+
+    &.icon-button {
+        i {
+            margin-right: $small-spacing;
+        }
+    }
+}
+
+.modal-dialog {
+    max-width: 100vh;
+    
+    .modal-content {
+        padding: $large-spacing;
+        border-radius: 1rem;
+        
+        .modal-header {
+            border: none;
+            
+            .modal-title {
+                margin: 0;
+                font-size: 2rem;
+            }
+        }
+    }
+
+}

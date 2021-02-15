@@ -1,0 +1,15 @@
+@mixin card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    @include card;
+    margin: 0 0 $double-spacing 0;
+
+    @include respond-below(md) {
+        margin: 0 0 $double-spacing * 2 0;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,17 @@
+#promo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+
+    background: linear-gradient(to right, #203647, #12232E);
+
+
+    iframe {
+        display: block;
+        margin: auto;
+        @include card;
+    }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "wp-bootstrap-starter",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000b\u0000a\u0000s\u0000e\u0000-\u0000t\u0000h\u0000e\u0000m\u0000e\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "dist": "webpack --mode production",
+    "watch": "webpack --watch --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ApinisMikelis/base-theme.git"
+  },
+  "keywords": [],
+  "author": "Miķelis Apinis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ApinisMikelis/base-theme/issues"
+  },
+  "homepage": "https://github.com/ApinisMikelis/base-theme#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^5.0.1",
+    "mini-css-extract-plugin": "^1.3.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.1.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.8.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
+}

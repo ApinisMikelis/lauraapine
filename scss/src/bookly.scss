@@ -1,0 +1,49 @@
+.bookly-form {
+
+    .bookly-btn {
+        border-radius: 1rem !important;
+        padding: $small-spacing $large-spacing !important;
+        background-color: theme-colors('primary') !important;
+    }
+
+    .bookly-progress-tracker > div:first-child .step {
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .bookly-service-step {
+
+        .bookly-box.bookly-bold {
+            display: none;
+        }
+
+        .bookly-form-group[data-type="category"],
+        .bookly-form-group[data-type="staff"] {
+            display: none;
+        }
+
+    }
+
+    .bookly-time-step {
+        .bookly-columnizer {
+
+            .bookly-hour {
+                border: none !important;
+                background-color: theme-colors('shadow-light') !important;
+    
+                span {
+                    font-weight: 500;
+                }
+
+                .bookly-hour-icon {
+                    display: none;
+                }
+            }
+
+        }
+    }
+
+    .bookly-nav-steps {
+        border-top: none !important;
+    }
+    
+}
