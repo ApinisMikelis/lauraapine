@@ -10,7 +10,6 @@
  */
 
 ?>
-<?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
 
 	</div>
     <?php get_template_part( 'footer-widget' ); ?>
@@ -21,7 +20,6 @@
             </div>
 		</div>
 	</footer>
-<?php endif; ?>
 </div>
 
 <?php wp_footer(); ?>
