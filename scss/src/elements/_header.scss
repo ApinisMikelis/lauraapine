@@ -1,4 +1,8 @@
 #masthead {
+    position: absolute;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
     padding: $double-spacing $triple-spacing;
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -11,6 +15,10 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             text-align: right;
+
+            .nav-link {
+                color: theme-color('white');
+            }
         }
     }
 }
