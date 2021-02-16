@@ -320,20 +320,6 @@ body {
     padding-right: 0;
   }
   
-  body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
-    color: #cdbfe3;
-    padding: 0.5rem;
-    font-weight: 500;
-    font-size: 0.875rem;
-  }
-  
-  body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover,
-  body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a {
-    color: #fff;
-    font-weight: 600;
-    /*background: #f9f9f9;*/
-  }
-  
   .navbar-brand {
     height: auto;
   }
