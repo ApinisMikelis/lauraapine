@@ -1,0 +1,16 @@
+#masthead {
+    padding: $double-spacing $triple-spacing;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 10rem;
+    justify-self: center;
+    align-items: center;
+
+    #main-menu {
+        .navbar-nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            text-align: right;
+        }
+    }
+}

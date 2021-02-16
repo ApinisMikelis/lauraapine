@@ -252,7 +252,6 @@ body {
     margin-bottom: 0;
     background-color: theme-color('primary');
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
-    padding: .74rem 1rem;
   }
   
   .navbar-brand > a {
@@ -618,8 +617,6 @@ body {
   .entry-content:after,
   .comment-content:before,
   .comment-content:after,
-  .site-header:before,
-  .site-header:after,
   .site-content:before,
   .site-content:after,
   .site-footer:before,
@@ -632,7 +629,6 @@ body {
   .clear:after,
   .entry-content:after,
   .comment-content:after,
-  .site-header:after,
   .site-content:after,
   .site-footer:after {
     clear: both;
