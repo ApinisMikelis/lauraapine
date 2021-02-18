@@ -34,31 +34,9 @@
 <div id="page" class="site">
 
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-bootstrap-starter' ); ?></a>
-	
-    <header id="masthead" class="site-header navbar-static-top <?php echo wp_bootstrap_starter_bg_class(); ?>" role="banner">
-
-        <div id="logo">
-
-            <?php get_template_part('inc/assets/svg/lauraapine'); ?>
-        
-        </div>
-
-        <div id="main-menu">
-
-            <?php
-                wp_nav_menu(array(
-                'theme_location'    => 'primary',
-                'container'       => '',
-                'menu_id'         => false,
-                'menu_class'      => 'navbar-nav',
-                'depth'           => 3,
-                'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
-                'walker'          => new wp_bootstrap_navwalker()
-                ));
-            ?>
-
-        </div>
-
-	</header>
     
+    <?php if(!is_front_page()) {
+        get_template_part('elements/masthead');
+    } ?>
+
 	<div id="content" class="site-content">
