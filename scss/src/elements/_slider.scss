@@ -5,4 +5,58 @@
             object-position: center center;
         }
     }
+
+    .slider-controls {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-column-gap: $spacing;
+        position: absolute;
+        right: $triple-spacing;
+        bottom: $double-spacing;
+        z-index: 9;
+
+        .control-prev,
+        .control-next {
+            transition: $default-transition;
+        }
+
+        .control-prev:hover {
+            transform: translateX(-0.3rem) scaleX(1.05);
+        }
+
+        .control-next:hover {
+            transform: translateX(0.3rem) scaleX(1.05);
+        }
+
+        svg {
+            width: 9rem;
+
+            path {
+                fill: theme-color('white');
+            }
+        }
+
+        .indicator {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            color: theme-color('white');
+            font-size: 0.6rem;
+
+            span {
+                text-align: center;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 33%;
+                width: 20px;
+                height: 1px;
+                background: theme-color('white');
+                transform: rotate(-45deg);
+            }
+        }
+    }
 }

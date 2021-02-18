@@ -1,4 +1,6 @@
-<div id="slider" class="carousel slide" data-ride="carousel">
+<div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <?php get_template_part('elements/masthead', '', array('slider-header' => true)); ?>
 
     <div class="carousel-inner">
 
@@ -12,12 +14,21 @@
     
 
     </div>
-    <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-    </a>
+
+    <div class="slider-controls">
+
+        <a class="control-prev" href="#slider" role="button" data-slide="prev">
+            <?php get_template_part('inc/assets/svg/arrow-left'); ?>
+        </a>
+
+        <span class="indicator">
+            <span>1</span>
+            <span>2</span>
+        </span>
+
+        <a class="control-next" href="#slider" role="button" data-slide="next">
+            <?php get_template_part('inc/assets/svg/arrow-right'); ?>
+        </a>
+
+    </div>
 </div>
