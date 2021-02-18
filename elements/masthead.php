@@ -4,7 +4,11 @@
 
     <div id="logo">
 
-        <?php get_template_part('inc/assets/svg/lauraapine'); ?>
+        <a href="<?php echo home_url(); ?>">
+
+            <?php get_template_part('inc/assets/svg/lauraapine'); ?>
+
+        </a>
 
     </div>
 
