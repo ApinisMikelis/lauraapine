@@ -1,17 +1,18 @@
+<?php $images = acf_photo_gallery('slider-images', $post->ID); ?>
+
 <div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
 
     <?php get_template_part('elements/masthead', '', array('slider-header' => true)); ?>
 
     <div class="carousel-inner">
 
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="<?php echo bloginfo('stylesheet_directory');?>/inc/assets/img/slider.jpg" alt="First slide">
-        </div>
+        <?php foreach($images as $key => $image) : ?>
 
-        <div class="carousel-item">
-            <img class="d-block w-100" src="<?php echo bloginfo('stylesheet_directory');?>/inc/assets/img/slider2.jpg" alt="Second slide">
-        </div>
-    
+            <div class="carousel-item <?php echo $key == 0 ? 'active' : ''; ?>">
+                <img class="d-block w-100" src="<?php echo $image['full_image_url']?>" alt="<?php echo $image['title']; ?>">
+            </div>
+
+        <?php endforeach; ?>
 
     </div>
 
@@ -23,7 +24,7 @@
 
         <span class="indicator">
             <span>1</span>
-            <span>2</span>
+            <span><?php echo count($images); ?></span>
         </span>
 
         <a class="control-next" href="#slider" role="button" data-slide="next">
