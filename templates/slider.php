@@ -1,6 +1,11 @@
-<?php $images = acf_photo_gallery('slider-images', $post->ID); ?>
+<?php
 
-<div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
+$images = acf_photo_gallery('slider-images', $post->ID);
+$interval = get_field('interval', $post->ID);
+
+?>
+
+<div id="slider" class="carousel slide carousel-fade" data-ride="carousel" data-interval="<?php echo $interval; ?>">
 
     <?php get_template_part('elements/masthead', '', array('slider-header' => true)); ?>
 
@@ -23,8 +28,8 @@
         </a>
 
         <span class="indicator">
-            <span>1</span>
-            <span><?php echo count($images); ?></span>
+            <span class="current">1</span>
+            <span class="last"><?php echo count($images); ?></span>
         </span>
 
         <a class="control-next" href="#slider" role="button" data-slide="next">
