@@ -21,6 +21,7 @@
                 }
             }
         }
+
         .navbar-nav {
             .nav-link {
                 color: theme-color('white');
@@ -34,7 +35,7 @@
             margin: 0 auto;
 
             path {
-                fill: theme-color('secondary')
+                fill: theme-color('primary')
             }
         }
     }
@@ -45,7 +46,7 @@
         text-align: right;
 
         .nav-link {
-            color: theme-color('secondary');
+            color: theme-color('primary');
         }
     }
     
