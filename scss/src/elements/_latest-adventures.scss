@@ -12,6 +12,10 @@
                 grid-template-columns: 1fr 1fr 1fr;
 
                 .adventure {
+                    a {
+                        text-decoration: none;
+                    }
+                    
                     h3 {
                         display: grid;
                         align-items: center;

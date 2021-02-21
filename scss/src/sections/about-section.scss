@@ -1,0 +1,30 @@
+#about {
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: $triple-spacing;
+
+        .image {
+            position: relative;
+            padding: 2rem 0rem 0rem 8rem;
+
+            .hello {
+                padding: $large-spacing $double-spacing;
+                position: absolute;
+                top: 5rem;
+                left: 4rem;
+                background: theme-color('pink');
+                font-size: 1.5rem;
+                font-weight: 300;
+                font-family: $main-font;
+            }
+
+            img {
+                
+                box-shadow: 0 0 1rem theme-color('gray');
+            }
+        }
+    }
+
+}
