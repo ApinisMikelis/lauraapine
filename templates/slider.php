@@ -5,7 +5,7 @@ $interval = get_field('interval', $post->ID);
 
 ?>
 
-<div id="slider" class="carousel slide carousel-fade" data-ride="carousel" data-interval="<?php echo $interval; ?>">
+<div id="slider" class="carousel slide carousel-fade bootstrap-slider" data-ride="carousel" data-interval="<?php echo $interval; ?>">
 
     <?php get_template_part('elements/masthead', '', array('slider-header' => true)); ?>
 

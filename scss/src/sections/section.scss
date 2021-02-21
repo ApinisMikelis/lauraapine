@@ -1,0 +1,18 @@
+.section {
+
+    padding: $triple-spacing;
+
+    &.pink-section {
+        background: theme-color('pink');
+    }
+ 
+    .section-title {
+        margin: $double-spacing 0;
+        padding: 0;
+        font-size: 2rem;
+        font-family: $main-font;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+}

@@ -1,0 +1,59 @@
+#latest-adventures {
+
+    #latest-adventures-slider {
+
+        position: relative;
+        padding-bottom: 5rem;
+
+        .carousel-item {
+            .adventure-grid {
+                display: grid;
+                grid-column-gap: $triple-spacing;
+                grid-template-columns: 1fr 1fr 1fr;
+
+                .adventure {
+                    h3 {
+                        display: grid;
+                        align-items: center;
+                        text-align: center;
+                        height: $triple-spacing;
+                    }
+                }
+            }
+        }
+
+        .slider-controls {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: $spacing;
+            position: absolute;
+            right: $triple-spacing;
+            bottom: $spacing;
+            z-index: 9;
+    
+            .control-prev,
+            .control-next {
+                transition: $default-transition;
+            }
+    
+            .control-prev:hover {
+                transform: translateX(-0.3rem) scaleX(1.05);
+            }
+    
+            .control-next:hover {
+                transform: translateX(0.3rem) scaleX(1.05);
+            }
+    
+            svg {
+                width: 9rem;
+    
+                path {
+                    fill: theme-color('primary');
+                }
+            }
+    
+        }
+    
+    }
+
+}
