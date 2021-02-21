@@ -18,6 +18,20 @@
                         text-align: center;
                         height: $triple-spacing;
                     }
+
+                    img {
+                        transition: $default-transition;
+                    }
+
+                    &:hover {
+                        img {
+                            transform: scale(1.05);
+                        }
+                        
+                        a {
+                            text-decoration: none;
+                        }
+                    }
                 }
             }
         }
