@@ -3,7 +3,7 @@
     $heading = get_field('about-heading', $args['post_id']);
     $content = get_field('about-text', $args['post_id']);
     $greeting = get_field('greeting', $args['post_id']);
-    $link = get_field('about-url', $args['post_id']);
+    $link = get_field('about-link', $args['post_id']);
     $link_text = get_field('about-link-text', $args['post_id']);
     $image = get_field('about-image', $args['post_id']);
 
