@@ -293,6 +293,11 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibility.php';
 
 /**
+ * Add custom post types and taxonomies
+ */
+require get_template_directory() . '/inc/custom-post-types.php';
+
+/**
  * Functions for adding theme settings in admin dashboard
  */
 require get_template_directory() . '/inc/admin-settings.php';
