@@ -1,0 +1,75 @@
+#review-slider {
+
+    .carousel-inner {
+
+        overflow: visible;
+
+        .carousel-item {
+        
+            .review-grid {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+    
+                .review-content {
+                    
+                    position: relative;
+    
+                    .review-box {
+
+                        display: grid;
+                        grid-template-columns: 1fr 6fr;
+
+                        padding: $double-spacing;
+                        position: absolute;
+                        top: -2rem;
+                        right: -4rem;
+                        background: theme-color('pink');
+                        box-shadow: 0 0 1rem 0 theme-color('gray');
+
+                        h2 {
+                            @include remove-spacing;
+                            font-size: 1.8rem;
+                            writing-mode: vertical-lr;
+                            text-orientation: sideways-right;
+                        }                        
+                    }
+    
+                }
+    
+                .review-image {
+                    img {
+                        box-shadow: 0 0 10px theme-color('gray');
+                        aspect-ratio: 3 / 2;
+                    }
+                }
+            }   
+    
+        }
+
+    }
+
+    .slider-controls {
+        position: absolute;
+        right: $triple-spacing;
+        bottom: $double-spacing;
+        z-index: 9;
+
+        .control-next {
+            transition: $default-transition;
+        }
+
+        .control-next:hover {
+            transform: translateX(0.3rem) scaleX(1.05);
+        }
+
+        svg {
+            width: 9rem;
+
+            path {
+                fill: theme-color('white');
+            }
+        }
+
+    }
+
+}

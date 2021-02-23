@@ -5,7 +5,11 @@
     &.pink-section {
         background: theme-color('pink');
     }
- 
+
+    &.gray-section {
+        background: theme-color('light-gray');
+    }
+    
     .section-title {
         margin: $double-spacing 0;
         padding: 0;

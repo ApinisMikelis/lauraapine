@@ -10,4 +10,6 @@ get_template_part('templates/latest-adventures');
 
 get_template_part('templates/about', '', array('post_id' => $post_id));
 
+get_template_part('templates/reviews');
+
 get_footer();
