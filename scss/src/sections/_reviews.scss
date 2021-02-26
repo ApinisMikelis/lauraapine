@@ -26,6 +26,18 @@
                         background: theme-color('pink');
                         box-shadow: 0 0 1rem 0 theme-color('gray');
 
+                        &.dark {
+                            background: theme-color('primary');
+
+                            h2 {
+                                color: theme-color('pink');
+                            }
+
+                            p {
+                                color: theme-color('white');
+                            }
+                        }
+
                         h2 {
                             @include remove-spacing;
                             font-size: 1.8rem;
@@ -55,6 +67,7 @@
         z-index: 9;
 
         .control-next {
+            display: block;
             transition: $default-transition;
         }
 
