@@ -1,77 +1,48 @@
 #latest-adventures {
 
-    #latest-adventures-slider {
+    position: relative;
+    padding-bottom: 5rem;
 
-        position: relative;
-        padding-bottom: 5rem;
+    .adventure-grid {
+        display: grid;
+        grid-gap: $double-spacing $triple-spacing;
+        grid-template-columns: 1fr 1fr 1fr;
 
-        .carousel-item {
-            .adventure-grid {
-                display: grid;
-                grid-column-gap: $triple-spacing;
-                grid-template-columns: 1fr 1fr 1fr;
+        .adventure {
+            a {
+                display: block;
+                text-decoration: none;
+                transition: transform 300ms;
 
-                .adventure {
-                    a {
-                        text-decoration: none;
-                    }
+                img {
+                    transition: box-shadow 300ms;
+                }
+
+                &:hover {
+                    transform: scale(1.05) rotate(-1deg);
+                    text-decoration: none;
                     
-                    h3 {
-                        display: grid;
-                        align-items: center;
-                        text-align: center;
-                        height: $triple-spacing;
-                    }
-
                     img {
-                        transition: $default-transition;
-                    }
-
-                    &:hover {
-                        img {
-                            transform: scale(1.05);
-                        }
-                        
-                        a {
-                            text-decoration: none;
-                        }
+                        box-shadow: 0 0 1rem 0 theme-color('gray');
                     }
                 }
             }
-        }
-
-        .slider-controls {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-column-gap: $spacing;
-            position: absolute;
-            right: $triple-spacing;
-            bottom: $spacing;
-            z-index: 9;
-    
-            .control-prev,
-            .control-next {
-                transition: $default-transition;
-            }
-    
-            .control-prev:hover {
-                transform: translateX(-0.3rem) scaleX(1.05);
-            }
-    
-            .control-next:hover {
-                transform: translateX(0.3rem) scaleX(1.05);
-            }
-    
-            svg {
-                width: 9rem;
-    
-                path {
-                    fill: theme-color('primary');
+            
+            &:nth-child(2n){
+                a:hover {
+                    transform: scale(1.05) rotate(1deg);
+                    
                 }
             }
-    
+
+            h3 {
+                display: grid;
+                align-items: center;
+                text-align: center;
+                height: $triple-spacing;
+            }
+
         }
-    
     }
 
 }
