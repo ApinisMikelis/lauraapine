@@ -1,0 +1,26 @@
+.page-template-portfolio {
+    .portfolio-post-list {
+
+        padding: $spacing $triple-spacing;
+        display: grid;
+        grid-gap: $spacing;
+        grid-template-columns: 1fr 1fr;
+
+        .portfolio-post {
+
+            display: grid;
+            
+            grid-template-rows: 1fr 5fr;
+
+            h3 {
+                font-family: $main-font;
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            img {
+                aspect-ratio: 3 / 2;
+            }
+        }
+    }
+}
