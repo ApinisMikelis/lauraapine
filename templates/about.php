@@ -11,24 +11,29 @@
 
 <div id="about" class="section">
 
-    <h2 class="section-title"><?php echo $heading; ?></h2>
 
-    <div class="about-grid">
+    <div class="container">
 
-        <div class="text">
+        <h2 class="section-title"><?php echo $heading; ?></h2>
 
-            <?php echo $content; ?>
+        <div class="about-grid">
 
-            <a class="btn btn-primary" href="<?php echo $link; ?>">
-                <?php echo $link_text; ?>
-            </a>
+            <div class="text">
 
+                <?php echo $content; ?>
+
+                <a class="btn btn-primary" href="<?php echo $link; ?>">
+                    <?php echo $link_text; ?>
+                </a>
+
+            </div>
+
+            <div class="image"> 
+                <div class="hello"><?php echo $greeting; ?></div>
+                <img src="<?php echo $image; ?>" alt="<?php echo get_bloginfo( 'name' ); ?>" />
+            </div>
         </div>
 
-        <div class="image"> 
-            <div class="hello"><?php echo $greeting; ?></div>
-            <img src="<?php echo $image; ?>" alt="<?php echo get_bloginfo( 'name' ); ?>" />
-        </div>
     </div>
 
 </div>
