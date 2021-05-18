@@ -122,8 +122,8 @@ function wp_bootstrap_starter_widgets_init() {
         'after_title'   => '</h3>',
     ) );
     register_sidebar( array(
-        'name'          => esc_html__( 'Footer 1', 'wp-bootstrap-starter' ),
-        'id'            => 'footer-1',
+        'name'          => esc_html__( 'Vietiņa instagramam', 'wp-bootstrap-starter' ),
+        'id'            => 'insta-widget',
         'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-starter' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
