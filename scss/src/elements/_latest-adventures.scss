@@ -19,19 +19,12 @@
                 }
 
                 &:hover {
-                    transform: scale(1.05) rotate(-1deg);
+                    transform: $image-hover-transform;
                     text-decoration: none;
                     
                     img {
                         box-shadow: 0 0 1rem 0 theme-color('gray');
                     }
-                }
-            }
-            
-            &:nth-child(2n){
-                a:hover {
-                    transform: scale(1.05) rotate(1deg);
-                    
                 }
             }
 
