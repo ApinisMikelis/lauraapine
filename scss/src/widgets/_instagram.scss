@@ -1,0 +1,24 @@
+.widget.zoom-instagram-widget {
+    @include remove-spacing;
+
+    ul {
+        @include remove-spacing;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        @include respond-below(md) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @include respond-below(sm) {
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .zoom-instagram-link {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 1 / 1;
+            background-size: cover;
+        }
+    }
+}

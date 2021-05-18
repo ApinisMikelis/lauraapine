@@ -1,6 +1,8 @@
 .section {
 
-    padding: $triple-spacing;
+    &:not(.full-width-section) {
+        padding: $triple-spacing;
+    }
 
     &.pink-section {
         background: theme-color('pink');
@@ -9,9 +11,13 @@
     &.gray-section {
         background: theme-color('light-gray');
     }
+
+    &.full-width-section {
+        padding: $triple-spacing 0;
+    }
     
     .section-title {
-        margin: $double-spacing 0;
+        margin: $double-spacing 0 ($double-spacing + $triple-spacing) 0;
         padding: 0;
         font-size: 2rem;
         font-family: $main-font;
