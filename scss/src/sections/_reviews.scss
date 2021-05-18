@@ -23,27 +23,20 @@
                         position: absolute;
                         top: -2rem;
                         right: -4rem;
-                        background: theme-color('pink');
+                        background: theme-color('primary');
                         box-shadow: 0 0 1rem 0 theme-color('gray');
 
-                        &.dark {
-                            background: theme-color('primary');
-
-                            h2 {
-                                color: theme-color('pink');
-                            }
-
-                            p {
-                                color: theme-color('white');
-                            }
-                        }
-
                         h2 {
+                            color: theme-color('pink');
                             @include remove-spacing;
                             font-size: 1.8rem;
                             writing-mode: vertical-lr;
                             text-orientation: sideways-right;
-                        }                        
+                        }       
+                        
+                        p {
+                            color: theme-color('white');
+                        }
                     }
     
                 }

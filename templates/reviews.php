@@ -23,7 +23,7 @@ $loop = new WP_Query( $args ); ?>
 
                         <div class="review-grid">
                             <div class="review-content">
-                                <div class="review-box <?php echo get_field('color-theme'); ?>">
+                                <div class="review-box">
                                     <h2><?php echo get_the_title(); ?></h2>
                                     <div>
                                         <?php the_content(); ?>
