@@ -9,8 +9,7 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area col-sm-12 col-lg-8">
-		<div id="main" class="site-main" role="main">
+		<div class="site-main container-fluid" role="main">
 
 		<?php
 		while ( have_posts() ) : the_post();
@@ -19,16 +18,9 @@ get_header(); ?>
 
 			    the_post_navigation();
 
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
 		endwhile;
 		?>
 
 		</div>
-	</section>
 
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer();
