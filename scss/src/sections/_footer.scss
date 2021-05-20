@@ -1,0 +1,46 @@
+#footer {
+    padding: $double-spacing * 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: theme-color('pink-gray');
+
+    @include respond-below(md) {
+        grid-template-columns: 1fr;
+    }
+
+    section.widget {
+
+        margin: 0;
+        padding: $double-spacing;
+        font-size: 1.4rem;
+        
+        .section-title,
+        .widget-title {
+            margin: $double-spacing 0;
+            padding: 0;
+            font-size: 1.5rem;
+            font-family: $main-font;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        
+        &.contact {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        &.widget_nav_menu {
+            .nav-link {
+
+                font-family: $main-font;
+                padding-left: 0rem;
+                transition: padding-left 300ms 50ms ease-in-out;
+
+                &:hover {
+                    padding-left: 1rem;
+                }
+            }
+        }
+
+    }
+}

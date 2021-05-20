@@ -598,9 +598,7 @@ body {
   .comment-content:before,
   .comment-content:after,
   .site-content:before,
-  .site-content:after,
-  .site-footer:before,
-  .site-footer:after {
+  .site-content:after {
     content: "";
     display: table;
     table-layout: fixed;
@@ -609,8 +607,7 @@ body {
   .clear:after,
   .entry-content:after,
   .comment-content:after,
-  .site-content:after,
-  .site-footer:after {
+  .site-content:after {
     clear: both;
   }
   
@@ -729,21 +726,6 @@ body {
   
   .comment-list .pingback:first-child {
     border: medium none;
-  }
-  
-  /*--------------------------------------------------------------
-  # Infinite scroll
-  --------------------------------------------------------------*/
-  /* Globally hidden elements when Infinite Scroll is supported and in use. */
-  .infinite-scroll .posts-navigation,
-  .infinite-scroll.neverending .site-footer {
-    /* Theme Footer (when set to scrolling) */
-    display: none;
-  }
-  
-  /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-  .infinity-end.neverending .site-footer {
-    display: block;
   }
   
   /*--------------------------------------------------------------
@@ -890,13 +872,6 @@ body {
   /*--------------------------------------------------------------
   # Footer
   --------------------------------------------------------------*/
-  footer#colophon {
-    font-size: 85%;
-  }
-  body:not(.theme-preset-active) footer#colophon {
-    color: #99979c;
-    background-color: #f7f7f7;
-  }
   .navbar-dark .site-info {
     color: #fff;
   }
@@ -906,7 +881,7 @@ body {
     text-align: center;
   }
   
-  .copyright a, footer#colophon a {
+  .copyright a {
     color: inherit;
   }
   

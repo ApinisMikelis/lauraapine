@@ -1,0 +1,35 @@
+.widget_nav_menu {
+
+    ul {
+        @include remove-spacing;
+        list-style: none;
+
+        .menu-item {
+
+            &:not(:last-child) {
+                margin-bottom: $double-spacing;
+            }
+
+            a {
+                display: block;
+                color: inherit;
+                font-size: 1.5rem;
+                font-family: $main-font;
+                font-weight: 300;
+                text-transform: uppercase;
+                text-align: center;
+                transition: all 400ms ease-in-out;
+
+                &:hover {
+                    text-decoration: none;
+                    transform: scale(1.1);
+                }
+            }
+
+            
+            
+        }
+
+    }
+
+}
