@@ -50,10 +50,34 @@ if ( ! class_exists( 'Custom_Theme_Settings' ) ) {
 
 			if ( $options ) {
 
-				if ( ! empty( $options['your-setting-name'] ) ) {
-					$options['your-setting-name'] = sanitize_text_field( $options['your-setting-name'] );
+				if ( ! empty( $options['phone'] ) ) {
+					$options['phone'] = sanitize_text_field( $options['phone'] );
 				} else {
-					unset( $options['your-setting-name'] );
+					unset( $options['phone'] );
+                }
+
+				if ( ! empty( $options['email'] ) ) {
+					$options['email'] = sanitize_text_field( $options['email'] );
+				} else {
+					unset( $options['email'] );
+                }
+
+				if ( ! empty( $options['instagram'] ) ) {
+					$options['instagram'] = sanitize_text_field( $options['instagram'] );
+				} else {
+					unset( $options['instagram'] );
+                }
+
+				if ( ! empty( $options['facebook'] ) ) {
+					$options['facebook'] = sanitize_text_field( $options['facebook'] );
+				} else {
+					unset( $options['facebook'] );
+                }
+
+				if ( ! empty( $options['pinterest'] ) ) {
+					$options['pinterest'] = sanitize_text_field( $options['pinterest'] );
+				} else {
+					unset( $options['pinterest'] );
                 }
 				 
 			}
@@ -77,11 +101,51 @@ if ( ! class_exists( 'Custom_Theme_Settings' ) ) {
 
 						<tr valign="top">
 							<th scope="row">
-                                <?php esc_html_e( 'Your setting label', 'custom-options' ); ?>
+                                <?php esc_html_e( 'Telefons', 'custom-options' ); ?>
                             </th>
 							<td>
-								<?php $value = self::get_theme_option( 'your-setting-name' ); ?>
-								<input type="text" name="theme_options[your-setting-name]" value="<?php echo esc_attr( $value ); ?>">
+								<?php $value = self::get_theme_option( 'phone' ); ?>
+								<input type="text" name="theme_options[phone]" value="<?php echo esc_attr( $value ); ?>">
+							</td>
+						</tr>
+
+						<tr valign="top">
+							<th scope="row">
+                                <?php esc_html_e( 'Epasts', 'custom-options' ); ?>
+                            </th>
+							<td>
+								<?php $value = self::get_theme_option( 'email' ); ?>
+								<input type="text" name="theme_options[email]" value="<?php echo esc_attr( $value ); ?>">
+							</td>
+						</tr>
+
+						<tr valign="top">
+							<th scope="row">
+                                <?php esc_html_e( 'Instagram', 'custom-options' ); ?>
+                            </th>
+							<td>
+								<?php $value = self::get_theme_option( 'instagram' ); ?>
+								<input type="text" name="theme_options[instagram]" value="<?php echo esc_attr( $value ); ?>">
+							</td>
+						</tr>
+
+						<tr valign="top">
+							<th scope="row">
+                                <?php esc_html_e( 'Facebook', 'custom-options' ); ?>
+                            </th>
+							<td>
+								<?php $value = self::get_theme_option( 'facebook' ); ?>
+								<input type="text" name="theme_options[facebook]" value="<?php echo esc_attr( $value ); ?>">
+							</td>
+						</tr>
+
+						<tr valign="top">
+							<th scope="row">
+                                <?php esc_html_e( 'Pinterest', 'custom-options' ); ?>
+                            </th>
+							<td>
+								<?php $value = self::get_theme_option( 'pinterest' ); ?>
+								<input type="text" name="theme_options[pinterest]" value="<?php echo esc_attr( $value ); ?>">
 							</td>
 						</tr>
 
