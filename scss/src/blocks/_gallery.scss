@@ -1,0 +1,31 @@
+.wp-block-gallery {
+
+    .blocks-gallery-grid {
+        @include remove-spacing;
+        list-style: none;
+
+        .blocks-gallery-item {
+
+            &:not(:last-child) {
+                margin-bottom: $double-spacing;
+            }
+
+            figure {
+                @include remove-spacing;
+
+                img {
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                figcaption {
+                    padding: $double-spacing;
+                    text-align: center;
+                }
+
+            }
+
+        }
+    }
+
+}

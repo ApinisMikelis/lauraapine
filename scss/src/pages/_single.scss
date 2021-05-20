@@ -1,0 +1,14 @@
+.single-post {
+
+    .container-fluid {
+        padding: 0 $double-spacing;
+        max-width: 80vw;
+    }
+
+    .post-thumbnail {
+        img {
+            width: 100%;
+        }
+    }
+
+}

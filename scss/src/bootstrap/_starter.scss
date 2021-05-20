@@ -206,10 +206,14 @@ body {
   p {
     margin-bottom: 1.5em;
   }
+
   h1.entry-title {
-    font-size: 1.31rem;
-    border-bottom: 1px solid #eaecef;
+    padding: $triple-spacing;
+    font-size: 4rem;
+    font-weight: 300;
+    text-align: center;
   }
+
   h2.entry-title {
     border-bottom: 1px solid #eaecef;
   }
