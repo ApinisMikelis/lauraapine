@@ -6,7 +6,7 @@
 
 </div>
 
-<div class="portfolio-post-list">
+<div class="portfolio-post-list post-list">
 
     <?php 
     
@@ -21,7 +21,7 @@
     
     while ( $loop->have_posts() ) : $loop->the_post();
 
-        get_template_part( 'template-parts/portfolio-post' );
+        get_template_part( 'template-parts/post-listing' );
 
     endwhile;
     

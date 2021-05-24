@@ -1,0 +1,46 @@
+.page-template-blog,
+.page-template-portfolio {
+
+    .post-list {
+
+        padding: $spacing $triple-spacing;
+        display: grid;
+        grid-gap: $triple-spacing;
+        grid-template-columns: 1fr 1fr;
+
+        .post-listing {
+
+            a {
+                display: grid;
+                grid-template-rows: 1fr 5fr;
+
+                h3 {
+                    font-family: $main-font;
+                    font-size: 2rem;
+                    text-align: center;
+                    transition: color 300ms 80ms ease-in-out;
+                }
+    
+                img {
+                    aspect-ratio: 3 / 2;
+                    filter: opacity(0.5) blur(0.6px) saturate(0.5);
+                    transition: filter 300ms 80ms ease-in-out;
+                }
+
+                &:hover {
+                    
+                    text-decoration: none;
+
+                    h3 {
+                        color: theme-color('primary');
+                    }
+
+                    img {
+                        filter: opacity(1) blur(0) saturate(1);
+                    }
+                }
+
+            }
+        }
+    }
+}

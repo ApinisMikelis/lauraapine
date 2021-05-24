@@ -1,11 +1,11 @@
-<div class="blog-post">
+<div class="post-listing">
 
     <a href="<?php echo the_permalink(); ?>" class="flex-fill flex-grow">
     
         <h3><?php echo the_title();?></h3>
 
-    </a>
+        <?php the_post_thumbnail('full'); ?>
 
-    <?php the_post_thumbnail('full'); ?>
+    </a>
 
 </div>
