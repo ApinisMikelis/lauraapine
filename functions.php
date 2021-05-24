@@ -318,6 +318,11 @@ require get_template_directory() . '/inc/custom-post-types.php';
 require get_template_directory() . '/inc/admin-settings.php';
 
 /**
+ * Functions for adding custom fields
+ */
+// require get_template_directory() . '/inc/custom-fields.php';
+
+/**
  * Load custom WordPress nav walker.
  */
 if ( ! class_exists( 'wp_bootstrap_navwalker' )) {
