@@ -1,3 +1,9 @@
+body:not(.home) {
+    #footer {
+        margin-top: $triple-spacing;
+    }
+}
+
 #footer {
     padding: $double-spacing * 2;
     display: grid;
