@@ -1,7 +1,16 @@
-.page-template-page-with-featured-image {
-    
-    .page {
+.page-template-contact {
+
+    .content-area {
         text-align: center;
+    }
+    
+    .contact-cols {        
+
+        .cols {
+            display: grid;
+            grid-column-gap: $triple-spacing;
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
 }
