@@ -3,6 +3,11 @@
 $main-font: 'Merriweather', serif;
 $body-font: 'Montserrat', sans-serif;
 
+$font-size: 1rem;
+$font-size-mobile: 1.2rem;
+
+$line-height-mobile: 2.5rem;
+
 * {
     font-family: $body-font;
 }

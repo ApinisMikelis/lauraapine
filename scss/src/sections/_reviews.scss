@@ -1,81 +1,112 @@
-#review-slider {
+#reviews {
+    padding: $triple-spacing 0 ($triple-spacing * 2) 0;
+    background-image: linear-gradient(to right top, #c8c8c8, #d4d3d4, #e1dedf, #eee9e9, #faf5f3);
 
-    .carousel-inner {
 
-        overflow: visible;
+    .container {
+        max-width: 90vw;
+        padding: 0;
+    }
 
-        .carousel-item {
+    #review-slider {
+
+        .carousel-inner {
+    
+            overflow: visible;
+    
+            .carousel-item {
+            
+                .review-grid {
+                    display: grid;
+                    grid-template-columns: 1fr 2fr;
+
+                    @include respond-below(md) {
+                        grid-template-columns: 1fr;
+                    }
         
-            .review-grid {
-                display: grid;
-                grid-template-columns: 1fr 2fr;
-    
-                .review-content {
-                    
-                    position: relative;
-    
-                    .review-box {
-
-                        display: grid;
-                        grid-template-columns: 1fr 6fr;
-
-                        padding: $double-spacing;
-                        position: absolute;
-                        top: -2rem;
-                        right: -4rem;
-                        background: theme-color('primary');
-                        box-shadow: 0 0 1rem 0 theme-color('gray');
-
-                        h2 {
-                            color: theme-color('pink');
-                            @include remove-spacing;
-                            font-size: 1.8rem;
-                            writing-mode: vertical-lr;
-                            text-orientation: sideways-right;
-                        }       
+                    .review-content {
                         
-                        p {
-                            color: theme-color('white');
+                        position: relative;
+        
+                        .review-box {
+    
+                            display: grid;
+                            grid-template-columns: 1fr 6fr;
+    
+                            height: 45vh;
+                            padding: $spacing $large-spacing;
+                            position: absolute;
+                            top: -2rem;
+                            right: -4rem;
+                            background: theme-color('primary');
+                            box-shadow: 0 0 1rem 0 theme-color('gray');
+
+                            @include respond-below(md) {
+                                padding: $double-spacing;
+                                position: relative;
+                                top: auto;
+                                right: auto;
+                                height: auto;
+
+                                p {
+                                    font-size: $font-size-mobile !important;
+                                    line-height: $line-height-mobile;
+                                }
+                            }
+    
+                            h2 {
+                                color: theme-color('pink');
+                                @include remove-spacing;
+                                font-size: 1.8rem;
+                                writing-mode: vertical-lr;
+                                text-orientation: sideways-right;
+                            }       
+                            
+                            p {
+                                font-size: 1rem;
+                                color: theme-color('white');
+                            }
+                        }
+        
+                    }
+        
+                    .review-image {
+                        img {
+                            box-shadow: 0 0 10px theme-color('gray');
+                            aspect-ratio: 3 / 2;
                         }
                     }
-    
-                }
-    
-                .review-image {
-                    img {
-                        box-shadow: 0 0 10px theme-color('gray');
-                        aspect-ratio: 3 / 2;
-                    }
-                }
-            }   
-    
-        }
-
-    }
-
-    .slider-controls {
-        position: absolute;
-        right: $triple-spacing;
-        bottom: $double-spacing;
-        z-index: 9;
-
-        .control-next {
-            display: block;
-            transition: $default-transition;
-        }
-
-        .control-next:hover {
-            transform: translateX(0.3rem) scaleX(1.05);
-        }
-
-        svg {
-            width: 9rem;
-
-            path {
-                fill: theme-color('white');
+                }   
+        
             }
+    
         }
-
+    
+        .slider-controls {
+            position: absolute;
+            right: $triple-spacing;
+            bottom: $double-spacing;
+            z-index: 9;
+    
+            .control-next {
+                display: block;
+                transition: $default-transition;
+            }
+    
+            .control-next:hover {
+                transform: translateX(0.3rem) scaleX(1.05);
+            }
+    
+            svg {
+                width: 9rem;
+    
+                path {
+                    fill: theme-color('white');
+                }
+            }
+    
+        }
+    
     }
-
 }
+
