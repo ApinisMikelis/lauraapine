@@ -18,11 +18,12 @@
                 font-weight: 300;
                 text-transform: uppercase;
                 text-align: center;
-                transition: all 400ms ease-in-out;
+                transition: transform 400ms ease-in-out;
 
                 &:hover {
                     text-decoration: none;
                     transform: scale(1.1);
+                    background: transparent;
                 }
             }
 

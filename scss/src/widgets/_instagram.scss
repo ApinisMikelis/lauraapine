@@ -21,4 +21,10 @@
             background-size: cover;
         }
     }
+
+    .zoom-instagram-widget__items::before,
+    .zoom-instagram-widget__items::after {
+        display: none;
+    }
 }
+

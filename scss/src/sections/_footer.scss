@@ -5,10 +5,11 @@ body:not(.home) {
 }
 
 #footer {
-    padding: $double-spacing * 2;
+    margin: $large-spacing;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background: theme-color('pink-gray');
+    border: 2px solid theme-color('pink-gray');
+
 
     @include respond-below(md) {
         grid-template-columns: 1fr;
@@ -37,14 +38,7 @@ body:not(.home) {
 
         &.widget_nav_menu {
             .nav-link {
-
                 font-family: $main-font;
-                padding-left: 0rem;
-                transition: padding-left 300ms 50ms ease-in-out;
-
-                &:hover {
-                    padding-left: 1rem;
-                }
             }
         }
 
