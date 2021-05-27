@@ -1,7 +1,55 @@
 .page-template-contact {
 
+    .contact-form {
+
+        .wpcf7-form-control {
+            border: none;
+            padding: $large-spacing $spacing;
+
+
+            &:not(.wpcf7-textarea):not(.wpcf7-submit) {
+
+                padding-left: 0.5rem;
+                transition: padding-left 300ms ease-in-out;
+
+                &:focus {
+                    padding-left: 1rem;
+                    border-radius: 0;
+                    border-bottom: 3px solid theme-color('gray');
+                }
+            }
+
+            &.wpcf7-textarea {
+                max-height: 12rem;
+                height: auto;
+            }
+
+            &.wpcf7-submit {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            &:focus {
+                box-shadow: none;
+                border: none;
+            }
+        }
+
+    }
+
     .content-area {
         text-align: center;
+
+        .footer-contacts-widget {
+
+            padding: $spacing;
+
+            .widget-title {
+                display: none;
+            }
+
+        }
     }
     
     .contact-cols {        

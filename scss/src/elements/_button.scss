@@ -1,26 +1,23 @@
-#page {
+a.btn,
+input.btn {
 
-    a.btn {
+    padding: $spacing $double-spacing;
+    text-decoration: none;
+    border-radius: 0;
+    transition: $default-transition;
+    font-weight: 600;
+    box-shadow: 0 0 .5rem theme-color('gray');
 
-        padding: $spacing $double-spacing;
-        text-decoration: none;
-        border-radius: 0;
-        transition: $default-transition;
-        font-weight: 600;
-        box-shadow: 0 0 .5rem theme-color('gray');
+    &.btn-primary {
+        background: theme-color('white');
+        border-color: theme-color('white');
+        color: theme-color('primary');
 
-        &.btn-primary {
-            background: theme-color('white');
-            border-color: theme-color('white');
-            color: theme-color('primary');
-
-            &:hover {
-                background: theme-color('primary');
-                border-color: theme-color('primary');
-                color: theme-color('white');
-            }
+        &:hover {
+            background: theme-color('primary');
+            border-color: theme-color('primary');
+            color: theme-color('white');
         }
-
     }
 
 }
