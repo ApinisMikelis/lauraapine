@@ -2,6 +2,11 @@
 
     .contact-form {
 
+        .wpcf7-not-valid-tip {
+            padding: $small-spacing 0;
+            color: theme-color('gray');
+        }
+
         .wpcf7-form-control {
             border: $border;
             padding: $large-spacing $spacing;
@@ -32,6 +37,24 @@
                 box-shadow: none;
                 border: none;
             }
+        }
+
+        .ajax-loader {
+            display: block;
+            margin: $double-spacing auto;
+        }
+
+        .wpcf7 form.failed .wpcf7-response-output,
+        .wpcf7 form.aborted .wpcf7-response-output {
+            border: none;
+            background-color: theme-color('pink');
+        }
+    
+        .wpcf7-response-output {
+            @include remove-spacing;
+            border: none;
+            padding: $spacing $large-spacing;
+            background: theme-color('light-gray');
         }
 
     }
