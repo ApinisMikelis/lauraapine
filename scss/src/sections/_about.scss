@@ -5,19 +5,40 @@
         grid-template-columns: 1fr 1fr;
         grid-column-gap: $triple-spacing;
 
+        @include respond-below(md) {
+            grid-template-columns: 1fr;
+            grid-row-gap: $triple-spacing;
+            
+            .text {
+                .btn {
+                    display: block;
+                }
+            }
+        }
+
         .image {
             position: relative;
             padding: 0 0 0 8rem;
 
+            @include respond-below(md) {
+                padding: 0;
+            }
+
             .hello {
                 padding: $large-spacing $double-spacing;
                 position: absolute;
-                top: 5rem;
+                bottom: 5rem;
                 left: 4rem;
                 background: theme-color('pink');
                 font-size: 1.5rem;
                 font-weight: 300;
                 font-family: $main-font;
+
+                @include respond-below(md) {
+                    top: 5rem;
+                    bottom: auto;
+                    left: -3rem;
+                }
             }
 
             img {
