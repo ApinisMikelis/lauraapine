@@ -8,11 +8,11 @@ body:not(.home) {
     margin: $large-spacing;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 2px solid theme-color('pink-gray');
-
+    border: $border;
 
     @include respond-below(md) {
         grid-template-columns: 1fr;
+        background: #fdfbfb;
     }
 
     section.widget {

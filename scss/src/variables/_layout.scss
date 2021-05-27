@@ -5,6 +5,7 @@ $large-spacing: 1.5rem;
 $double-spacing: 2rem;
 $triple-spacing: 3rem;
 $border-radius: 1.8rem;
+$border: 2px solid theme-color('pink-gray');
 $box-shadow: 0 10px 30px theme-color("gray");
 
 @mixin remove-spacing {
