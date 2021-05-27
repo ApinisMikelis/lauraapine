@@ -3,19 +3,17 @@
     .contact-form {
 
         .wpcf7-form-control {
-            border: none;
+            border: $border;
             padding: $large-spacing $spacing;
+            border-radius: 0;
+            font-size: 1.2rem;
 
+            &:not(.wpcf7-submit) {
 
-            &:not(.wpcf7-textarea):not(.wpcf7-submit) {
-
-                padding-left: 0.5rem;
-                transition: padding-left 300ms ease-in-out;
+                transition: background-color 300ms ease-in-out;
 
                 &:focus {
-                    padding-left: 1rem;
-                    border-radius: 0;
-                    border-bottom: 3px solid theme-color('gray');
+                    background-color: theme-color('light-gray');
                 }
             }
 
@@ -58,6 +56,11 @@
             display: grid;
             grid-column-gap: $triple-spacing;
             grid-template-columns: 1fr 1fr;
+            padding: $double-spacing 0;
+
+            @include respond-below(md) {
+                grid-template-columns: 1fr;
+            }
         }
     }
 
