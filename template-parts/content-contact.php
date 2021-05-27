@@ -3,7 +3,6 @@
 $contact_form = get_field('contact-form-code');
 $photo = get_field('photo');
 
-
 ?>
 
 <div class="contact-cols">
@@ -34,7 +33,15 @@ $photo = get_field('photo');
 
             <?php endif; ?>
 
-            <?php get_template_part('template-parts/social'); ?>
+            <?php if ( is_active_sidebar( 'footer-3' ) ) : ?>
+
+                <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+
+                    <?php dynamic_sidebar( 'footer-3' ); ?>
+
+                </div>
+
+            <?php endif; ?>
 
         </div>
 
