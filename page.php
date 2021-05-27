@@ -1,5 +1,11 @@
 <?php get_header(); ?>
 
+<div class="post-thumbnail">
+
+	<?php the_post_thumbnail(); ?>
+	
+</div>
+
 <div class="heading-container">
 
     <h1><?php the_title(); ?></h1>
