@@ -13,6 +13,8 @@
 
 	</div>
 
+	<a href="#" id="back-to-top" title="Back to top"><i class="fas fa-arrow-up"></i></a>
+
 	<footer id="footer" class="<?php echo wp_bootstrap_starter_bg_class(); ?>" role="contentinfo">
 		
 		<?php get_template_part('footer-widget'); ?>
