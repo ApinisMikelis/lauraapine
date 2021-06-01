@@ -35,7 +35,7 @@
 
             &:focus {
                 box-shadow: none;
-                border: none;
+                border-color: theme-color('light-gray');
             }
         }
 
