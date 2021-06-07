@@ -1,41 +1,4 @@
 #latest-adventures {
-
     position: relative;
     padding-bottom: 5rem;
-
-    .adventure-grid {
-        display: grid;
-        grid-gap: $double-spacing $triple-spacing;
-        grid-template-columns: 1fr 1fr 1fr;
-
-        .adventure {
-            a {
-                display: block;
-                text-decoration: none;
-                transition: transform 300ms;
-
-                img {
-                    transition: box-shadow 300ms;
-                }
-
-                &:hover {
-                    transform: $image-hover-transform;
-                    text-decoration: none;
-                    
-                    img {
-                        box-shadow: 0 0 1rem 0 theme-color('gray');
-                    }
-                }
-            }
-
-            h3 {
-                display: grid;
-                align-items: center;
-                text-align: center;
-                height: $triple-spacing;
-            }
-
-        }
-    }
-
 }
